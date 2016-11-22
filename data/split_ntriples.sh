@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 
 while read p; do
   SUBJECT=$(echo $p | cut -d " " -f 1 | sed 's/^.//' | sed 's/.$//')
