@@ -18,17 +18,11 @@ In case label for the URI does not exist the fetcher will return you None (see t
 
 ## Index
 
-The index was built using the following SPARQL query:
-```
-select distinct ?uri ?label {
-  ?uri rdfs:label ?label .
-  FILTER(LANG(?label) = "" || LANGMATCHES(LANG(?label), "en"))
-}
-```
 You can find index in labels.csv file.
+For details see the scripts in data/ folder.
 
 ### References
-[1] [LOV Project](http://lov.okfn.org/dataset/lov/about)
+[1] [YAGO Project](http://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/#c10444)
 
 ## Development Setup & Testing
 ```
@@ -43,4 +37,4 @@ Ivan Ermilov: [my github account](https://github.com/earthquakesan)
 
 ## License
 
-This interface is licensed with Apache 2.0 license. For LOV Project license, see [their website](https://lov.okfn.org).
+This interface is licensed with Apache 2.0 license. For YAGO license, see [their website](http://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/#c10444).
