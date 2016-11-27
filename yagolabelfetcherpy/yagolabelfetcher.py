@@ -18,7 +18,7 @@ class YAGOLabelFetcher(object):
     def convert_csv_to_dict(self, labels):
         _labels = {}
         for line in labels:
-            (_, uri, _, label, _) = line.strip().split('"')
+            (uri, label) = line.strip().split(';separator;')
             _labels[uri] = label
         return _labels
 
